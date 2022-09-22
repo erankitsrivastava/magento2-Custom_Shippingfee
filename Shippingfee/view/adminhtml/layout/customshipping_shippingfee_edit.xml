@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="admin-2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <update handle="styles"/>
+    <body>
+<!--     admin-2columns-left     -->
+
+       <!--  <referenceContainer name="content">
+            <uiComponent name="size_edit_form"/>
+        </referenceContainer> -->
+
+        <referenceContainer name="left">
+            <block class="Custom\Shippingfee\Block\Adminhtml\Shippingfee\Edit\Tabs" name="grid_shippingfee_edit_tabs">
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Custom\Shippingfee\Block\Adminhtml\Shippingfee\Edit" name="grid_shippingfee_edit_tab_main"/>
+        </referenceContainer>
+
+    </body>
+</page>
